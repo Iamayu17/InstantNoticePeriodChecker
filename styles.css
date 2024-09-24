@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(234, 240, 242, 0.6);
+}
+
+.container {
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.footer-center {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-effect {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#result {
+    color: purple;
+}
+
+.ayu {
+    color: brown;
+}
+
+.input-effect input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.input-effect input:hover,
+.input-effect input:focus {
+    border-color: #4caf50;
+}
+
+.input-effect label {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    color: #aaa;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-effect input:focus ~ label,
+.input-effect input:not(:placeholder-shown) ~ label {
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+    color: #4caf50;
+    transition: 0.3s;
+}
+
+.input-effect1 {
+    color: #4caf50;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.input-effect1 input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.input-effect1 input:hover,
+.input-effect1 input:focus {
+    border-color: #4caf50;
+}
+
+.text-2xl {
+    color: darkgreen;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px; /* Adjust padding for tablets */
+    }
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+    h1 {
+        font-size: 1.25rem; /* Adjust heading size for mobile */
+    }
+    .input-effect input {
+        font-size: 14px; /* Smaller font size for mobile inputs */
+    }
+}
